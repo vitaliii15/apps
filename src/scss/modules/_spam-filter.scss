@@ -1,0 +1,78 @@
+/* :root {
+	--dark-grey: #1b1b32;
+	--light-grey: #f5f6f7;
+	--golden-yellow: #fecc4c;
+	--yellow: #ffcc4c;
+	--gold: #feac32;
+	--orange: #ffac33;
+	--dark-orange: #f89808;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: var(--dark-grey);
+	color: var(--light-grey);
+}
+
+body,
+#message-input:placeholder-shown {
+	text-align: center;
+}
+
+textarea {
+	max-width: 90%;
+}
+
+.main-text {
+	margin: 25px 0;
+}
+
+.title {
+	font-size: 5rem;
+}
+
+.description {
+	margin-top: 15px;
+	font-size: 3rem;
+}
+
+.message-label {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 3rem;
+}
+
+#message-input:placeholder-shown,
+textarea {
+	font-size: 2rem;
+}
+
+.btn {
+	display: block;
+	cursor: pointer;
+	min-width: 200px;
+	margin: 10px auto;
+	font-size: 3rem;
+	color: var(--dark-grey);
+	background-color: var(--gold);
+	background-image: linear-gradient(var(--golden-yellow), var(--orange));
+	border-color: var(--gold);
+	border-width: 3px;
+}
+
+.btn:hover {
+	background-image: linear-gradient(var(--yellow), var(--dark-orange));
+}
+
+#result {
+	font-size: 3rem;
+	margin: 20px 0;
+}
+
+.footer {
+	margin-top: 10px;
+	font-size: 2rem;
+} */
