@@ -3,6 +3,7 @@ const forumCategoryUrl = 'https://forum.freecodecamp.org/c/';
 const forumTopicUrl = 'https://forum.freecodecamp.org/t/';
 const avatarUrl = 'https://seal.discourse-cdn.com/freecodecamp';
 const postsContainer = document.getElementById('posts-container');
+
 const fetchData = async () => {
 	try {
 		const res = await fetch(forumLatest);
@@ -18,4 +19,21 @@ fetchData();
 const showLatestPosts = (data) => {
 	const { topic_list, users } = data;
 	const { topics } = topic_list;
+	postsContainer.innerHTML = topics.map(item => {
+		const { id, title, views, posts_count, slug, posters, category_id, bumped_at } = item;
+		return
+		`<tr>
+		   <td>
+			   <p class="post-title">${title}</p>
+			 </td>
+		   <td></td>
+		   <td>
+			   ${posts_count - 1}
+			 </td>
+		   <td>
+			   ${views}
+			 </td>
+		   <td></td>
+		</tr>`;
+	}).join('');
 };
