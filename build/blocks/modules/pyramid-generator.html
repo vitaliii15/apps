@@ -1,0 +1,609 @@
+<h1 class="main-title">Pyramid Generator</h1>
+<div class="description-container">
+	<h1 id="content-start">Step 1</h1>
+	<div>
+		<section id="description">
+			<p>JavaScript is the programming language that powers the web. Unlike the HTML and CSS you have learned previously, JavaScript is most commonly used to write logic instead of markup.</p>
+			<p>In this project, you will learn the basics of Javascript and apply those concepts to building a pyramid generator.</p>
+			<p>A pyramid generator is a program where you can set the type of character, the count for the pyramid, and the direction of the pyramid. The program will then generate a pyramid based on those inputs.</p>
+			<p>Click on the <code>"Check your code"</code> button to proceed to the next step and start the project.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 1</h1>
+	<div>
+		<section id="description">
+			<p>JavaScript is the programming language that powers the web. Unlike the HTML and CSS you have learned previously, JavaScript is most commonly used to write logic instead of markup.</p>
+			<p>One of the most important concepts in programming is variables. A <dfn>variable</dfn> points to a specific memory address that stores a value. Variables are given a name which can be used throughout your code to access that value.</p>
+			<p>Declaring a variable means giving it a name. In JavaScript, this is often done with the <code>let</code> keyword. For example, here is how you would declare a <code>hello</code> variable:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> hello<span class="token punctuation">;</span></code></pre>
+			</details>
+			<p>Variable naming follows specific rules: names can include letters, numbers, dollar signs, and underscores, but cannot contain spaces and must not begin with a number.</p>
+			<p><em>Note</em>: It is common practice to end statements in JavaScript with a semicolon. <code>;</code></p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 2</h1>
+	<div>
+		<section id="description">
+			<p>You can assign a value using the <dfn>assignment</dfn> operator <code>=</code>. For example:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> hello <span class="token operator">=</span> <span class="token string">"Hello"</span><span class="token punctuation">;</span></code></pre>
+			</details>
+			<p>Assigning a value to a variable at the moment of its declaration is known as <dfn>initialization</dfn>.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 3</h1>
+	<div>
+		<section id="description">
+			<p>JavaScript has seven primitive data types, with <code>String</code> being one of them. In JavaScript, a <dfn>string</dfn> represents a sequence of characters and can be enclosed in either single (<code>'</code>) or double (<code>"</code>) quotes.</p>
+			<p>Note that strings are <dfn>immutable</dfn>, which means once they are created, they cannot be changed. The variable can still be reassigned another value.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 4</h1>
+	<div>
+		<section id="description">
+			<p>The <dfn>console</dfn> allows you to print and view JavaScript output. You can send information to the console using <code>console.log()</code>. For example, this code will print <code>"Naomi"</code> to the console:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> developer <span class="token operator">=</span> <span class="token string">"Naomi"</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>developer<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+			</details>
+			<p>The code above accesses the <code>developer</code> variable with its name in the <code>console.log()</code>. Note that the value between the parentheses is the value that will be printed.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 5</h1>
+	<div>
+		<section id="description">
+			<p>When a variable is declared with the <code>let</code> keyword, you can <dfn>reassign</dfn> (or change the value of) that variable later on. In this example, the value of <code>programmer</code> is changed from <code>"Naomi"</code> to <code>"CamperChan"</code>.</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> programmer <span class="token operator">=</span> <span class="token string">"Naomi"</span><span class="token punctuation">;</span><br>programmer <span class="token operator">=</span> <span class="token string">"CamperChan"</span><span class="token punctuation">;</span></code></pre>
+			</details>
+			<p>Note that when reassigning a variable, you do <strong>not</strong> use the <code>let</code> keyword again.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 7</h1>
+	<div>
+		<section id="description">
+			<p>When variable names are more than one word, there are specific naming conventions for how you capitalize the words. In JavaScript, the convention to use is <dfn>camel case</dfn>.</p>
+			<p>Camel case means that the first word in the name is entirely lowercase, but the following words are all title-cased. Here are some examples of camel case:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> variableOne<span class="token punctuation">;</span><br><span class="token keyword">let</span> secondVariable<span class="token punctuation">;</span><br><span class="token keyword">let</span> yetAnotherVariable<span class="token punctuation">;</span><br><span class="token keyword">let</span> thisIsAnAbsurdlyLongName<span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 8</h1>
+	<div>
+		<section id="description">
+			<p>When you declare a variable without initializing it, it is considered <dfn>uninitialized</dfn>.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 9</h1>
+	<div>
+		<section id="description">
+			<p>The default value of an uninitialized variable is <code>undefined</code>. This is a special data type that represents a value that does not have a definition yet.</p>
+			<p>You can still assign a value to an uninitialized variable. Here is an example:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> uninitialized<span class="token punctuation">;</span><br>uninitialized <span class="token operator">=</span> <span class="token string">"assigned"</span><span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 10</h1>
+	<div>
+		<section id="description">
+			<p>You can also assign the value of a variable to another variable. For example:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> first <span class="token operator">=</span> <span class="token string">"One"</span><span class="token punctuation">;</span><br><span class="token keyword">let</span> second <span class="token operator">=</span> <span class="token string">"Two"</span><span class="token punctuation">;</span><br>second <span class="token operator">=</span> first<span class="token punctuation">;</span></code></pre>
+			</details>
+			<p>The <code>second</code> variable would now have the value <code>"One"</code>.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 19</h1>
+	<div>
+		<section id="description">
+			<p>You can access the values inside an array using the <dfn>index</dfn> of the value. An index is a number representing the position of the value in the array, starting from <code>0</code> for the first value.</p>
+			<p>You can access the value using <dfn>bracket notation</dfn>, such as <code>array[0]</code>.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 21</h1>
+	<div>
+		<section id="description">
+			<p>Notice how the value inside your <code>rows</code> array has been changed directly? This is called <dfn>mutation</dfn>. As you learn more about arrays, you will learn when to mutate an array, and when you should not.</p>
+			<p>Before moving on, this is a great opportunity to learn a common array use. Currently, your code accesses the last element in the array with <code>rows[2]</code>. But you may not know how many elements are in an array when you want the last one.</p>
+			<p>You can make use of the <code>.length</code> property of an array - this returns the number of elements in the array. To get the last element of any array, you can use the following syntax:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js">array<span class="token punctuation">[</span>array<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span></code></pre>
+			</details>
+			<p><code>array.length</code> returns the number of elements in the array. By subtracting <code>1</code>, you get the index of the last element in the array. You can apply this same concept to your <code>rows</code> array.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 25</h1>
+	<div>
+		<section id="description">
+			<p>A <dfn>method</dfn> in JavaScript is a function that's associated with certain values or objects. An example you've already encountered is the <code>.log()</code> method, which is part of the <code>console</code> object.</p>
+			<p>Arrays have their own methods, and the first you will explore is the <code>.push()</code> method. This allows you to "push" a value to the end of an array. Here is an example to add the number <code>12</code> to the end of an array:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js">array<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token number">12</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 26</h1>
+	<div>
+		<section id="description">
+			<p>Another method essential for this project is the <code>.pop()</code> method. It removes the last element from an array and <dfn>returns</dfn> that element.</p>
+			<p>When a method returns a value, you can think of it as giving the value back to you, making it available for use in other parts of your code.</p>
+			<p>Create a new variable called <code>popped</code> and assign it the result of <code>rows.pop()</code>. Then, log <code>popped</code> to the console.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 28</h1>
+	<div>
+		<section id="description">
+			<p>Were you expecting to see <code>4</code> in the console? <code>.push()</code> returns the new length of the array, after adding the value you give it.</p>
+			<p>It is important to be aware of what values a method returns. Take some time to experiment with <code>.push()</code> and <code>.pop()</code>. When you are ready, remove all of your <code>.push()</code> and <code>.pop()</code> calls, and your <code>console.log</code> statements.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 32</h1>
+	<div>
+		<section id="description">
+			<p>To generate a pyramid, you will need to create multiple rows. When you have to perform a task repeatedly until a condition is met, you will use a <dfn>loop</dfn>. There are many ways to write a loop.</p>
+			<p>You are going to start with a basic <code>for</code> loop. <code>for</code> loops use the following syntax:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span>iterator<span class="token punctuation">;</span> condition<span class="token punctuation">;</span> iteration<span class="token punctuation">)</span> <span class="token punctuation">{</span><br> logic<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+			</details>
+			<p>In the upcoming steps, you'll explore each component of a loop in detail. For now, construct a <code>for</code> loop that includes the terms <code>"iterator"</code>, <code>"condition"</code>, and <code>"iteration"</code> for the three components. Keep the loop <dfn>body</dfn>, the section within the curly braces <code>{}</code>, empty.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 33</h1>
+	<div>
+		<section id="description">
+			<p>Your loop now needs a proper iterator. The <dfn>iterator</dfn> is a variable you can declare specifically in your <code>for</code> loop to control how the loop iterates or goes through your logic.</p>
+			<p>It is a common convention to use <code>i</code> as your iterator variable in a loop. A <code>for</code> loop allows you to declare this in the parentheses <code>()</code>. For example, here is a <code>for</code> loop that declares an <code>index</code> variable and assigns it the value <code>100</code>.</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span> <span class="token string">"second"</span><span class="token punctuation">;</span> <span class="token string">"third"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><br><span class="token punctuation">}</span></code></pre>
+			</details>
+			<p>Replace the string <code>"iterator"</code> with a <code>let</code> declaration for the variable <code>i</code>. Assign it the value <code>0</code> to start. This will give the <code>i</code> variable the value <code>0</code> the <strong>first time</strong> your loop runs.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 34</h1>
+	<div>
+		<section id="description">
+			<p>The <dfn>condition</dfn> of a <code>for</code> loop tells the loop how many times it should iterate. When the <code>condition</code> becomes false, the loop will stop.</p>
+			<p>In JavaScript, a Boolean value can be either <code>true</code> or <code>false</code>. These are not strings - you will learn more about the difference later on.</p>
+			<p>For now, you will use the <dfn>less than</dfn> operator (<code>&lt;</code>). This allows you to check if the value on the left is less than the value on the right. For example, <code>count &lt; 3</code> would evaluate to <code>true</code> if <code>count</code> is <code>2</code>, and <code>false</code> if <code>count</code> is <code>4</code>.</p>
+			<p>Replace your <code>"condition"</code> string with a condition to check if <code>i</code> is less than <code>count</code>.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 35</h1>
+	<div>
+		<section id="description">
+			<p>Your <dfn>iteration</dfn> statement will tell your loop what to do with the iterator after each run.</p>
+			<p>When you reassign a variable, you can use the variable to reference the previous value before the reassignment. This allows you to do things like add three to an existing number. For example, <code>bees = bees + 3;</code> would increase the value of <code>bees</code> by three.</p>
+			<p>Use that syntax to replace your <code>"iteration"</code> string with a reassignment statement that increases <code>i</code> by one.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 42</h1>
+	<div>
+		<section id="description">
+			<p>Now all of your numbers are appearing on the same line. This will not work for creating a pyramid.</p>
+			<p>You will need to add a new line to each row. However, pressing the return key to insert a line break between quotes in JavaScript will result in a parsing error. Instead, you need to use the special <dfn>escape sequence</dfn> <code>\n</code>, which is interpreted as a new line when the string is logged. For example:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js">lineOne <span class="token operator">=</span> lineOne <span class="token operator">+</span> <span class="token string">"\n"</span> <span class="token operator">+</span> lineTwo<span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 45</h1>
+	<div>
+		<section id="description">
+			<p>You're getting closer! At this point, you're encountering what's known as an <dfn>off-by-one error</dfn>, a frequent problem in zero-based indexing languages like JavaScript.</p>
+			<p>The first index of your <code>rows</code> array is <code>0</code>, which is why you start your <code>for</code> loop with <code>i = 0</code>. But repeating a string zero times results in nothing to print.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 46</h1>
+	<div>
+		<section id="description">
+			<p>A <dfn>function</dfn> is a block of code that can be reused throughout your application. Functions are declared with the following syntax:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">function</span> <span class="token function">name</span><span class="token punctuation">(</span><span class="token parameter">parameter</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><br><span class="token punctuation">}</span></code></pre>
+			</details>
+			<p>The <code>function</code> keyword tells JavaScript that the <code>name</code> variable is going to be a function. <code>parameter</code> is a variable that represents a value that is passed into the function when it is used. A function may have as many, or as few, <dfn>parameters</dfn> as you'd like. Like a <code>for</code> loop, the space between the curly braces is the <dfn>function body</dfn>.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 47</h1>
+	<div>
+		<section id="description">
+			<p>In order to use a function, you need to call it. A <dfn>function call</dfn> tells your application to run the code from the function wherever you choose to call it. The syntax for a function call is the function name followed by parentheses. For example, this code defines and calls a <code>test</code> function.</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary><pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><br><span class="token punctuation">}</span><br><span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 50</h1>
+	<div>
+		<section id="description">
+			<p>By default, functions return <code>undefined</code> as their value.</p>
+			<p>In order to return something else, you need to use the <code>return</code> keyword. Here is an example of a function that returns the string <code>"Functions are cool!"</code>:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">function</span> <span class="token function">demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token keyword"> return</span> <span class="token string">"Functions are cool!"</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 51</h1>
+	<div>
+		<section id="description">
+			<p>When you have a value that is explicitly written in your code, like the <code>"Hello!"</code> string in your function, it is considered to be <dfn>hard-coded</dfn>. Hard-coding a value inside a function might not make it as reusable as you'd like.</p>
+			<p>Instead, you can define <dfn>parameters</dfn> for the function. Parameters are special variables that are given a value when you call the function, and can be used in your function to dynamically change the result of the function's code.</p>
+			<p>To add a parameter to your function, you need to add a variable name inside the parentheses. For example, this <code>demo</code> function has a <code>name</code> parameter:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">function</span> <span class="token function">demo</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><br><span class="token punctuation">}</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 52</h1>
+	<div>
+		<section id="description">
+			<p>A function does not have to return a hard-coded value. It can return the value stored in a variable. Parameters are special variables for a function, so they can also be returned.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 53</h1>
+	<div>
+		<section id="description">
+			<p>When you pass a value to a function call, that value is referred to as an <dfn>argument</dfn>. Here is an example of calling a <code>demo</code> function and passing <code>"Naomi"</code> as the argument for the <code>name</code> parameter.</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">function</span> <span class="token function">demo</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token keyword"> return</span> name<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token function">demo</span><span class="token punctuation">(</span><span class="token string">"Naomi"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 56</h1>
+	<div>
+		<section id="description">
+			<p>Variables in JavaScript are available in a specific <dfn>scope</dfn>. In other words, where a variable is declared determines where in your code it can be used.</p>
+			<p>The first scope is the global scope. Variables that are declared outside of any "block" like a function or <code>for</code> loop are in the <dfn>global scope</dfn>.</p>
+			<p>When a variable is in the global scope, a function can access it in its definition. Here is an example of a function using a global <code>title</code> variable:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> title <span class="token operator">=</span> <span class="token string">"Professor "</span><span class="token punctuation">;</span><br><span class="token keyword">function</span> <span class="token function">demo</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token keyword"> return</span> title <span class="token operator">+</span> name<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token function">demo</span><span class="token punctuation">(</span><span class="token string">"Naomi"</span><span class="token punctuation">)</span></code></pre>
+			</details>
+			<p>This example would return <code>"Professor Naomi"</code>.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 57</h1>
+	<div>
+		<section id="description">
+			<p>Variables can also be declared inside a function. These variables are considered to be in the <dfn>local scope</dfn>, or <dfn>block scope</dfn>. A variable declared inside a function can only be used inside that function. If you try to access it outside of the function, you get a reference error.</p>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 58</h1>
+	<div>
+		<section id="description">
+			<p>Values returned out of a function are used by calling the function. You can use the function call directly as the value it returns, or capture the returned value in a variable. This way, you can use the value assigned to a locally scoped variable, outside the function it was created in.</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token keyword"> const</span> name <span class="token operator">=</span> <span class="token string">"Camper cat"</span><span class="token punctuation">;</span><br><span class="token keyword"> return</span> name<span class="token punctuation">;</span><br><span class="token punctuation">}</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "Camper cat"</span><br><span class="token keyword">const</span> capturedReturnValue <span class="token operator">=</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>capturedReturnValue<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "Camper cat"</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// reference error</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+	
+<div class="description-container">
+	<h1 id="content-start">Step 59</h1>
+	<div>
+		<section id="description">
+			<p>An important thing to know about the <code>return</code> keyword is that it does not just define a value to be returned from your function, it also stops the execution of your code inside a function or a block statement. This means any code after a <code>return</code> statement will not run.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 65</h1>
+	<div>
+		<section id="description">
+			<p>A <dfn>function call</dfn> allows you to actually use a function. You may not have been aware of it, but the methods like <code>.push()</code> that you have been using have been function calls.</p>
+			<p>A function is called by referencing the function's name, and adding <code>()</code>. Here's how to call a <code>test</code> function:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 66</h1>
+	<div>
+		<section id="description">
+			<p>Functions has parameters which you define. Values are provided to those parameters when a function is called.</p>
+			<p>The values you provide to a function call are referred to as <dfn>arguments</dfn>, and you <dfn>pass</dfn> arguments to a function call. Here's a function call with <code>"Hello"</code> passed as an argument:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token function">test</span><span class="token punctuation">(</span><span class="token string">"Hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 69</h1>
+	<div>
+		<section id="description">
+			<p>You can pass full expressions as an argument. The function will receive the result of evaluating that expression. For example, these two function calls would yield the same result:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token function">test</span><span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> <span class="token number">3</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token function">test</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 70</h1>
+	<div>
+		<section id="description">
+			<p>The addition operator is not the only way to add values to a variable. The <dfn>addition assignment</dfn> operator can be used as shorthand to mean "take the original value of the variable, add this value, and assign the result back to the variable." For example, these two statements would yield the same result:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js">test <span class="token operator">=</span> test <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span><br>test <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 71</h1>
+	<div>
+		<section id="description">
+			<p><dfn>increment operator</dfn> <code>++</code>. This operator increases the value of a variable by 1, updating the assignment for that variable. For example, <code>test</code> would become <code>8</code> here:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">let</span> test <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span><br>test<span class="token operator">++</span><span class="token punctuation">;</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 77</h1>
+	<div>
+		<section id="description">
+			<p>An <dfn><code>if</code> statement</dfn> allows you to run a block of code only when a condition is met. They use the following syntax:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span><br> logic<br><span class="token punctuation">}</span></code></pre>
+			</details>
+			<p>Create an <code>if</code> statement with the boolean <code>true</code> as the condition. In the body, print the string <code>"Condition is true"</code>.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 80</h1>
+	<div>
+		<section id="description">
+			<p>A <dfn>truthy value</dfn> is a value that is considered true when evaluated as a boolean. Most of the values you encounter in JavaScript will be truthy.</p>
+			<p>A <dfn>falsy value</dfn> is the opposite - a value considered false when evaluated as a boolean. JavaScript has a defined list of falsy values. Some of them include <code>false</code>, <code>0</code>, <code>""</code>, <code>null</code>, <code>undefined</code>, and <code>NaN</code>.</p>
+			<p>Try changing your <code>if</code> condition to an empty string <code>""</code>, which is a falsy value.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 81</h1>
+	<div>
+		<section id="description">
+			<p>In addition to <code>if</code> statements, JavaScript also has <dfn>else if</dfn> statements. <code>else if</code> statements allow you to check multiple conditions in a single block of code.</p>
+			<p>Here is the syntax for an <code>else if</code> statement:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>condition1<span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token comment"> // code to run if condition1 is true</span><br><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>condition2<span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token comment"> // code to run if condition2 is true</span><br><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>condition3<span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token comment"> // code to run if condition3 is true</span><br><span class="token punctuation">}</span> </code></pre>
+			</details>
+			<p>If the first condition is <code>false</code>, JavaScript will check the next condition in the chain. If the second condition is <code>false</code>, JavaScript will check the third condition, and so on.</p>
+			<p>Below your <code>if</code> statement, add an <code>else if</code> statement that checks if <code>5</code> is less than <code>10</code>. Then inside the body of the <code>else if</code> statement, log the string <code>"5 is less than 10"</code> to the console.</p>
+			<p>Check the console to see the results.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 82</h1>
+	<div>
+		<section id="description">
+			<p>Sometimes you will want to run different code when all of the <code>if...else if</code> conditions are <code>false</code>. You can do this by adding an <code>else</code> block.</p>
+			<p>An <code>else</code> block will only evaluate if the conditions in the <code>if</code> and <code>else if</code> blocks are not met.</p>
+			<p>Here the <code>else</code> block is added to the <code>else if</code> block.</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><br><span class="token keyword">if</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token comment"> // this code will run if condition is true</span><br><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>condition2<span class="token punctuation">)</span> <span class="token punctuation">{</span><br><span class="token comment"> // this code will run if the first condition is false</span><br><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br><span class="token comment"> // this code will run </span><br><span class="token comment"> // if the first and second conditions are false</span><br><span class="token punctuation">}</span></code></pre>
+			</details>
+			<p>Add an <code>else</code> block to the <code>else if</code> block. Inside the <code>else</code> block, log the string <code>"This is the else block"</code> to the console.</p>
+			<p>To see the results in the console, you can manually change the <code>&lt;</code> in the <code>else if</code> statement to <code>&gt;</code>. That will make the condition <code>false</code> and the <code>else</code> block will run.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 84</h1>
+	<div>
+		<section id="description">
+			<p>A <dfn><code>while</code></dfn> loop will run over and over again until the <code>condition</code> specified is no longer true. It has the following syntax:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary><pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">while</span> <span class="token punctuation">(</span>condition<span class="token punctuation">)</span> <span class="token punctuation">{</span><br> logic<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+			</details>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 86</h1>
+	<div>
+		<section id="description">
+			<p>The <dfn>equality</dfn> operator <code>==</code> is used to check if two values are equal. To compare two values, you'd use a statement like <code>value == 8</code>.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 87</h1>
+	<div>
+		<section id="description">
+			<p>The equality operator can lead to some strange behavior in JavaScript. For example, <code>"0" == 0</code> is true, even though one is a string and one is a number.</p>
+			<p>The <dfn>strict equality</dfn> operator <code>===</code> is used to check if two values are equal and share the same type. As a general rule, this is the equality operator you should always use. With the strict equality operator, <code>"0" === 0</code> becomes false, because while they might have the same value of zero, they are not of the same type.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 90</h1>
+	<div>
+		<section id="description">
+			<p>The <dfn>strict inequality</dfn> operator <code>!==</code> allows you to check if two values are not equal, or do not have the same type. The syntax is similar to the equality operator: <code>value !== 4</code>.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 94</h1>
+	<div>
+		<section id="description">
+			<p>Arrays have a special <code>length</code> property that allows you to see how many values, or <dfn>elements</dfn>, are in the array. You would access this property using syntax like <code>myArray.length</code>.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 102</h1>
+	<div>
+		<section id="description">
+			<p>Just like addition, there are different operators you can use for subtraction. The <dfn>subtraction assignment</dfn> operator <code>-=</code> subtracts the given value from the current variable value, then assigns the result back to the variable.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 106</h1>
+	<div>
+		<section id="description">
+			<p>The <code>.unshift()</code> method of an array allows you to add a value to the <strong>beginning</strong> of the array, unlike <code>.push()</code> which adds the value at the end of the array. Here is an example:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>numbers<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+			</details>
+			<p>The <code>numbers</code> array would now be <code>[5, 1, 2, 3]</code>.</p>
+			<p>Use <code>const</code> to declare an <code>unshifted</code> variable, and assign it the result of calling <code>.unshift()</code> on your <code>numbers</code> array. Pass <code>5</code> as the argument. Then print your <code>unshifted</code> variable.</p>
+		</section>
+	</div>
+</div>
+
+<div class="description-container">
+	<h1 id="content-start">Step 107</h1>
+	<div>
+		<section id="description">
+			<p>Notice that like <code>.push()</code>, <code>.unshift()</code> returns the new length of the array after the element is added.</p>
+			<p>Arrays also have a <code>.shift()</code> method. This will remove the <strong>first</strong> element of the array, unlike <code>.pop()</code> which removes the last element. Here is an example of the <code>.shift()</code> method:</p>
+			<details class="code-details" open="">
+				<summary class="code-details-summary">Example Code</summary>
+				<pre class="language-js" tabindex="0" role="region" aria-label="JavaScript code example"><code class="language-js"><span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br>numbers<span class="token punctuation">.</span><span class="token function">shift</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+			</details>
+			<p>The <code>numbers</code> array would be <code>[2, 3]</code>.</p>
+			<p>Directly below your <code>numbers</code> array, declare a <code>shifted</code> variable and assign it the result of calling <code>.shift()</code> on the <code>numbers</code> array. On the next line, log the <code>shifted</code> variable to the console.</p>
+		</section>
+	</div>
+</div>
